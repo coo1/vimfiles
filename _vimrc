@@ -1,3 +1,6 @@
+
+
+
 set autoindent
 set incsearch
 "set encoding=japan
@@ -19,22 +22,24 @@ set history=50
 set list
 set listchars=tab:>_,eol:$
 
+"	ç\ï∂ã≠í≤ÅB
 syntax enable
+colorscheme coo1
 set hlsearch
 
-highlight Normal		guibg=#C0DCC0
-highlight SpecialKey	guifg=gray
-highlight NonText		guifg=gray
+"highlight Normal		guibg=#C0DCC0
+"highlight SpecialKey	guifg=gray
+"highlight NonText		guifg=gray
 
 "highlight Comment guifg=darkgreen
 "highlight Constant guifg=
 "highlight Type guifg=blue term=bold
 "highlight Statement guifg=blue
-highlight Function guifg=black gui=bold,underline,italic
+"highlight Function guifg=black gui=bold,underline,italic
 
 set cursorline
 "highlight CursorLine guibg=bg guisp=red gui=undercurl
-highlight CursorLine guibg=bg guisp=red gui=underline
+"highlight CursorLine guibg=bg guisp=red gui=underline
 
 
 
@@ -49,8 +54,8 @@ inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
 "autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]://" | silent! lcd %:p:h | endif
 
 "	CåæåÍä÷êîã≠í≤ÅB
-syntax match CFunction /[a-zA-Z_]\+\w*\s*(\@=/ 
-hi CFunction guifg=#ff0000 guibg=#ffff00 
+"syntax match CFunction /[a-zA-Z_]\+\w*\s*(\@=/ 
+"hi CFunction guifg=#ff0000 guibg=#ffff00 
 
 filetype plugin on
 
